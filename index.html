@@ -63,24 +63,34 @@ body{
   pointer-events:none;
 }
 
-.hero-name{
-  font-family:'Noto Serif JP',serif;
-  font-weight:900;
-  font-size:clamp(3rem,11vw,7rem);
-  letter-spacing:.1em;
-  color:var(--ink);
-  line-height:1.1;
-  margin-bottom:.2rem;
+.hero-kicker{
+  font-family:'Noto Sans JP',sans-serif;
+  font-weight:400;
+  font-size:clamp(.7rem,2vw,.9rem);
+  letter-spacing:.42em;
+  text-indent:.42em;
+  color:#8b90b8;
+  margin-bottom:1rem;
 }
 
-.hero-badge{
-  display:inline-block;
+.hero-title-en{
   font-family:'Noto Serif JP',serif;
   font-weight:700;
-  font-size:clamp(1.6rem,5vw,3rem);
-  letter-spacing:.15em;
+  font-size:clamp(2.2rem,8vw,4.4rem);
+  letter-spacing:.03em;
   color:var(--ink);
-  margin-bottom:1.5rem;
+  line-height:1.05;
+  margin-bottom:.6rem;
+}
+
+.hero-sub-en{
+  font-family:'Noto Serif JP',serif;
+  font-style:italic;
+  font-weight:400;
+  font-size:clamp(.9rem,2.4vw,1.25rem);
+  letter-spacing:.06em;
+  color:#7a7f9a;
+  margin-bottom:2rem;
 }
 
 /* チラシ画像 */
@@ -96,13 +106,6 @@ body{
   display:block;
 }
 
-.hero-eng{
-  font-style:italic;
-  font-size:clamp(.8rem,2vw,1rem);
-  color:#777;
-  letter-spacing:.05em;
-  margin-bottom:2rem;
-}
 
 /* ── 開催情報バー ── */
 .info-bar{
@@ -297,15 +300,14 @@ footer .stripe-top{margin-bottom:1.5rem}
 <!-- HERO -->
 <div class="hero">
   <div class="hero-glow"></div>
-  <div class="hero-name">小 林 広 志</div>
-  <div class="hero-badge">個　展</div>
+  <p class="hero-kicker">SOLO EXHIBITION</p>
+  <h1 class="hero-title-en">Hiroshi Kobayashi</h1>
+  <p class="hero-sub-en">— A Journey in Color and Line —</p>
 
   <!-- チラシ画像 -->
   <div class="flyer-wrap">
     <img src="chirashi.jpg" alt="小林広志 個展『七色の軌跡』チラシ">
   </div>
-
-  <p class="hero-eng">A Journey in Color and Line — The Pen Art of Hiroshi Kobayashi —</p>
 </div>
 
 <!-- 開催情報バー -->
